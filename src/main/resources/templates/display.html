@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatable" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocerry</title>
+
+    <link href="../static/css/home.css" th:href="@{css/home.css}" rel="stylesheet"/>
+<!--    <script src="../static/js/nav.js" type="text/javascript" th:src="@{js/nav.js}"></script>-->
+
+</head>
+<body>
+    <nav class='navbar'>
+        <script src="../static/js/nav.js" type="text/javascript" th:src="@{js/nav.js}"></script>
+    </nav>
+
+    <!-- hero section -->
+    <header class="hero-section">
+        <div class="content">
+            <img src="../static/images/headerimagespic.jpg" class="logo" alt="" th:src="@{images/headerimagespic.jpg}"/>
+
+            <p class="sub-heading">The best farm fresh collection</p>
+        </div>
+    </header>
+
+
+
+    <!-- products container-->
+    <section class="product">
+        <h2 class="product-category">Essential products</h2>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">20% off</span>
+                    <img src="../static/images/tomato.jpeg" class="product-thumb" alt="" th:src="@{images/tomato.jpeg}"/>
+                    <button class="card-btn">add to cart</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">tomato</h2>
+                    <p class="product-short-des">Tomato-local, Grade-A</p>
+                    <span class="price" th:text="${Rs 62}"></span><span class="actual-price">Rs 77.5</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">36% off</span>
+                    <img src="../static/images/onions1.jpg" class="product-thumb" alt="" th:src="@{images/onions1.jpg}"/>
+                    <button class="card-btn">add to cart</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">onion</h2>
+                    <p class="product-short-des">onion-medium</p>
+                    <span class="price">Rs 41</span><span class="actual-price">Rs 65</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">31% off</span>
+                    <img src="../static/images/chillies1.jpg" class="product-thumb" alt="" th:src="@{images/chillies1.jpg}"/>
+                    <button class="card-btn">add to cart</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">chilli</h2>
+                    <p class="product-short-des">Fresh chilli-green long, medium</p>
+                    <span class="price">Rs 21</span><span class="actual-price">Rs 31</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">28% off</span>
+                    <img src="../static/images/potatoes1.jpg" class="product-thumb" alt="" th:src="@{images/potatoes1.jpg}"/>
+                    <button class="card-btn">add to cart</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">potato</h2>
+                    <p class="product-short-des">Fresh potato</p>
+                    <span class="price">Rs 34</span><span class="actual-price">Rs 47</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
