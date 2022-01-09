@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('git repo & clean') {
             steps {
-               bat "rmdir  /s /q FWD"
+                //bat "rmdir  /s /q FWD"
                 bat "git clone https://github.com/DhamoK/FWD.git"
                 bat "mvn clean -f FWD"
             }
