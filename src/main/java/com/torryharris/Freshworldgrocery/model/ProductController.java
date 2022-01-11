@@ -19,6 +19,26 @@ public class ProductController {
     private ProductService service;
     private final Logger LOG = LoggerFactory.getLogger(this.getClass());
 
+    @RequestMapping("/start")
+    public String start() {
+        return "start";
+    }
+
+    @RequestMapping("/login")
+    public String log() {
+        return "login";
+    }
+
+    @RequestMapping("/signUp")
+    public String signup() {
+        return "signup1";
+    }
+
+    @RequestMapping("/display")
+    public String display() {
+        return "display";
+    }
+
 
     @GetMapping("/products")
     public String showProductList(Model model){
@@ -67,25 +87,9 @@ public class ProductController {
         return "vegetables";
     }
 
-    @RequestMapping("/userLogin")
-    public String usrLogin() {
-        return "login1";
-    }
-
-    @RequestMapping("/signup")
-    public String signup() {
-        return "signup1";
-    }
-
-    @RequestMapping("/groceryList")
-    public String groceryList() {
-        return "display";
-    }
-
     @RequestMapping("/adminDashboard")
     public String admin() {
         return "adminDash";
     }
-
 
 }
