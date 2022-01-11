@@ -1,2 +1,2 @@
 It is a grocery app....
-Which contains all fresh vegetables,fruits etc;.
+Which contains all fresh vegetables,fruits, dry fruits etc.
