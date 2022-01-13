@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatable" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grocerry</title>
+    <title>Grocery</title>
 
     <link href="../static/css/home1.css" th:href="@{css/home1.css}"  rel="stylesheet">
 
@@ -57,51 +57,52 @@
         <div class="product-card">
             <div class="product-image" >
                 <span class="discount-tag">20% off</span>
-                <img src="../static/images/tomato.jpeg" class="product-thumb" alt="" th:src="@{images/tomato.jpeg}"/>
-                <button class="card-btn" onclick="addToCart(1)">add to cart</button>
+                <img src="../static/images/apple.jpeg" class="product-thumb" alt="" th:src="@{images/apple.jpeg}"/>
+                <button class="card-btn" onclick="addToCart(5)">add to cart</button>
             </div>
             <div class="product-info">
-                <h2 class="product-brand">tomato</h2>
-                <p class="product-short-des">Tomato-local, Grade-A</p>
-                <span class="price">Rs 62</span><span class="actual-price">Rs 77.5</span>
+                <h2 class="product-brand">Apple</h2>
+                <p class="product-short-des">Apple, Grade-A</p>
+                <span class="price">Rs 140</span><span class="actual-price">Rs 155</span>
             </div>
         </div>
         <div class="product-card">
             <div class="product-image">
                 <span class="discount-tag">36% off</span>
-                <img src="../static/images/onions1.jpg" class="product-thumb" alt="" th:src="@{images/onions1.jpg}"/>
-                <button class="card-btn" onclick="addToCart(2)">add to cart</button>
+                <img src="../static/images/orange.jpeg" class="product-thumb" alt="" th:src="@{images/orange.jpeg}"/>
+                <button class="card-btn" onclick="addToCart(6)">add to cart</button>
             </div>
             <div class="product-info">
-                <h2 class="product-brand">onion</h2>
-                <p class="product-short-des">onion-medium</p>
-                <span class="price">Rs 41</span><span class="actual-price">Rs 65</span>
+                <h2 class="product-brand">orange</h2>
+                <p class="product-short-des">orange-medium</p>
+                <span class="price">Rs 80</span><span class="actual-price">Rs 95</span>
             </div>
         </div>
         <div class="product-card">
             <div class="product-image">
                 <span class="discount-tag">31% off</span>
-                <img src="../static/images/chillies1.jpg" class="product-thumb" alt="" th:src="@{images/chillies1.jpg}"/>
-                <button class="card-btn" onclick="addToCart(3)">add to cart</button>
+                <img src="../static/images/strawberry.jpeg" class="product-thumb" alt="" th:src="@{images/strawberry.jpeg}"/>
+                <button class="card-btn" onclick="addToCart(7)">add to cart</button>
             </div>
             <div class="product-info">
-                <h2 class="product-brand">chilli</h2>
-                <p class="product-short-des">Fresh chilli-green long, medium</p>
-                <span class="price">Rs 21</span><span class="actual-price">Rs 31</span>
+                <h2 class="product-brand">Strawberry</h2>
+                <p class="product-short-des">Strawberry</p>
+                <span class="price">Rs 121</span><span class="actual-price">Rs 131</span>
             </div>
         </div>
         <div class="product-card">
             <div class="product-image">
                 <span class="discount-tag">28% off</span>
-                <img src="../static/images/potatoes1.jpg" class="product-thumb" alt="" th:src="@{images/potatoes1.jpg}"/>
-                <button class="card-btn" onclick="addToCart(4)">add to cart</button>
+                <img src="../static/images/papaya.jpeg" class="product-thumb" alt="" th:src="@{images/papaya.jpeg}"/>
+                <button class="card-btn" onclick="addToCart(8)">add to cart</button>
             </div>
             <div class="product-info">
-                <h2 class="product-brand">potato</h2>
-                <p class="product-short-des">Fresh potato</p>
-                <span class="price">Rs 34</span><span class="actual-price">Rs 47</span>
+                <h2 class="product-brand">papaya</h2>
+                <p class="product-short-des">Fresh papaya</p>
+                <span class="price">Rs 55</span><span class="actual-price">Rs 67</span>
             </div>
         </div>
+
     </div>
 </section>
 
@@ -153,21 +154,21 @@
 <script  type="text/javascript">
     const list = document.querySelector('.list');
 const products = {
-    1: {
-        "name": 'tomato',
-        "price": '62'
+    5: {
+        "name": 'apple',
+        "price": '140'
     },
-    2: {
-        "name": 'onion',
-        "price": '41'
+    6: {
+        "name": 'orange',
+        "price": '80'
     },
-    3: {
-        "name": 'chilli',
-        "price": '21'
+    7: {
+        "name": 'strawberry',
+        "price": '121'
     },
-    4: {
-        "name": 'potato',
-        "price": '34'
+    8: {
+        "name": 'papaya',
+        "price": '55'
     }
 
 }

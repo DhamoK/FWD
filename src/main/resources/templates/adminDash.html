@@ -26,21 +26,15 @@
     </li>
     <li>
       <div class="add_img">
-      <a href="Adming.jsp">
+      <a th:href="@{products}">
         <img class="addingLogo" src="../static/images/add_products_logo.jpg"  th:src="@{images/add_products_logo.jpg}"/>
         <span class="links_name">Add Products</span>
       </a>
         </div>
     </li>
     <li>
-      <a href="delete.jsp">
-        <i class='bx bx-pie-chart-alt-2' ></i>
-        <span class="links_name">Remove Products</span>
-      </a>
-    </li>
-    <li>
       <div class="log_img">
-      <a href="#">
+      <a th:href="@{start}">
         <img class="logout_img" src="../static/images/profilelogo.jpg"  th:src="@{images/profilelogo.jpg}"/>
         <span class="links_name">Log out</span>
       </a>

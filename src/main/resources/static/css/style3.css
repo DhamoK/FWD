@@ -45,9 +45,22 @@
     box-sizing: border-box;
 }
 
-body{
+
+body,html{
     -webkit-font-smoothing:antialiased;
     font-family: "Raleway-regular";
+  height: 100%;
+  margin: 0;
+
+}
+.button-container form,
+.button-container form div {
+    display: inline-block;
+}
+
+.button-container button {
+    display: inline-block;
+    vertical-align: middle;
 }
 .container {
     width:100%;
@@ -254,15 +267,21 @@ nav .navbar a:hover{
     -ms-transform:translateX(-50%);
     -o-transform:translateX(-50%);
 }
+
 header.hero{
-    height:600px;
+    height:73%;
+ width:1400px;
+   /* top:-500px;*/
     background-image:url(../images/hero.png);
-    background-position: 0% 0%;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    overflow:hidden;
+/*    overflow:hidden;*/
 }
 header.hero .container{
-    position: relative;
+    position: absolute;
+
+
 }
 header.hero .welcome{
     margin-bottom:0.25rem;
@@ -284,9 +303,13 @@ header.hero h1 span{
 }
 header.hero p{
     font-family: "Raleway-medium";
-    width:50%;
-    line-height:1.5;
-    margin-bottom:1rem;
+   /* width:50%;
+    line-height:normal;
+    margin-bottom:1rem;*/
+    margin: 0;
+    padding: 0;
+
+
 }
 .btn{
     padding:0.75rem 0.75rem;
@@ -318,6 +341,7 @@ header.hero p{
 .btn-secondary{
     background:var(--secondary);
     color:var(--heaven);
+
 }
 .btn-secondary:hover{
     background:var(--heaven);

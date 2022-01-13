@@ -1,0 +1,34 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page </title>
+  <link href="../static/css/adminlogin.css" th:href="@{css/adminlogin.css}" rel="stylesheet"/>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+<img src="../static/images/adminloginback1.jpg" id="bg" th:src="@{images/adminloginback1.jpg}"/>
+
+<form th:action="@{adminDash}" method="post">
+  <div class="form-field">
+
+    <input  img src="../static/images/user-icon.png"  width="20px"
+                 height="20px" top="15px"  th:src="@{images/user-icon.png}" type="email" placeholder="Email / Username" required/>
+
+  </div>
+
+  <div class="form-field">
+    <input type="password" placeholder="Password" required/>
+  </div>
+
+  <div class="form-field">
+    <button class="btn" type="submit">Log in</button>
+  </div>
+
+
+</form>
+<!-- partial -->
+
+</body>
+</html>

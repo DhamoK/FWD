@@ -57,49 +57,49 @@
         <div class="product-card">
             <div class="product-image" >
                 <span class="discount-tag">20% off</span>
-                <img src="../static/images/tomato.jpeg" class="product-thumb" alt="" th:src="@{images/tomato.jpeg}"/>
-                <button class="card-btn" onclick="addToCart(1)">add to cart</button>
+                <img src="../static/images/rice.jpg" class="product-thumb" alt="" th:src="@{images/rice.jpg}"/>
+                <button class="card-btn" onclick="addToCart(9)">add to cart</button>
             </div>
             <div class="product-info">
-                <h2 class="product-brand">tomato</h2>
-                <p class="product-short-des">Tomato-local, Grade-A</p>
-                <span class="price">Rs 62</span><span class="actual-price">Rs 77.5</span>
+                <h2 class="product-brand">Rice</h2>
+
+                <span class="price">Rs 111</span><span class="actual-price">Rs 135</span>
             </div>
         </div>
         <div class="product-card">
             <div class="product-image">
                 <span class="discount-tag">36% off</span>
-                <img src="../static/images/onions1.jpg" class="product-thumb" alt="" th:src="@{images/onions1.jpg}"/>
-                <button class="card-btn" onclick="addToCart(2)">add to cart</button>
+                <img src="../static/images/clove.jpeg" class="product-thumb" alt="" th:src="@{images/clove.jpeg}"/>
+                <button class="card-btn" onclick="addToCart(10)">add to cart</button>
             </div>
             <div class="product-info">
-                <h2 class="product-brand">onion</h2>
-                <p class="product-short-des">onion-medium</p>
-                <span class="price">Rs 41</span><span class="actual-price">Rs 65</span>
+                <h2 class="product-brand">Clove</h2>
+
+                <span class="price">Rs 63</span><span class="actual-price">Rs 77</span>
             </div>
         </div>
         <div class="product-card">
             <div class="product-image">
                 <span class="discount-tag">31% off</span>
-                <img src="../static/images/chillies1.jpg" class="product-thumb" alt="" th:src="@{images/chillies1.jpg}"/>
-                <button class="card-btn" onclick="addToCart(3)">add to cart</button>
+                <img src="../static/images/cinamon.jpeg" class="product-thumb" alt="" th:src="@{images/cinamon.jpeg}"/>
+                <button class="card-btn" onclick="addToCart(11)">add to cart</button>
             </div>
             <div class="product-info">
-                <h2 class="product-brand">chilli</h2>
-                <p class="product-short-des">Fresh chilli-green long, medium</p>
-                <span class="price">Rs 21</span><span class="actual-price">Rs 31</span>
+                <h2 class="product-brand">cinnamon</h2>
+
+                <span class="price">Rs 121</span><span class="actual-price">Rs 138</span>
             </div>
         </div>
         <div class="product-card">
             <div class="product-image">
                 <span class="discount-tag">28% off</span>
-                <img src="../static/images/potatoes1.jpg" class="product-thumb" alt="" th:src="@{images/potatoes1.jpg}"/>
+                <img src="../static/images/cuminseed.jpeg" class="product-thumb" alt="" th:src="@{images/cuminseed.jpeg}"/>
                 <button class="card-btn" onclick="addToCart(4)">add to cart</button>
             </div>
             <div class="product-info">
-                <h2 class="product-brand">potato</h2>
-                <p class="product-short-des">Fresh potato</p>
-                <span class="price">Rs 34</span><span class="actual-price">Rs 47</span>
+                <h2 class="product-brand">cuminseed</h2>
+
+                <span class="price">Rs 70</span><span class="actual-price">Rs 97</span>
             </div>
         </div>
     </div>
@@ -153,21 +153,21 @@
 <script  type="text/javascript">
     const list = document.querySelector('.list');
 const products = {
-    1: {
-        "name": 'tomato',
-        "price": '62'
+    9: {
+        "name": 'rice',
+        "price": '111'
     },
-    2: {
-        "name": 'onion',
-        "price": '41'
+    10: {
+        "name": 'clove',
+        "price": '63'
     },
-    3: {
-        "name": 'chilli',
-        "price": '21'
+    11: {
+        "name": 'cinnamon',
+        "price": '121'
     },
-    4: {
-        "name": 'potato',
-        "price": '34'
+    12: {
+        "name": 'cuminseed',
+        "price": '70'
     }
 
 }

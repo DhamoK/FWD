@@ -34,9 +34,14 @@ public class ProductController {
         return "signup1";
     }
 
-    @RequestMapping("/display")
-    public String display() {
-        return "display";
+    @RequestMapping("/adminlogin")
+    public String adminlogin() {
+        return "adminlogin";
+    }
+
+    @RequestMapping("/adminDash")
+    public String admin() {
+        return "adminDash";
     }
 
 
@@ -82,14 +87,34 @@ public class ProductController {
         return "redirect:/products";
     }
 
-    @RequestMapping("/vegetables")
+    @RequestMapping("home")
+    public String home() {
+        return "home";
+    }
+
+    @RequestMapping("shop")
+    public String shop() {
+        return "shop";
+    }
+
+    @RequestMapping("contact")
+    public String contact() {
+        return "contact";
+    }
+
+    @RequestMapping("vegetables")
     public String vegetables() {
         return "vegetables";
     }
 
-    @RequestMapping("/adminDashboard")
-    public String admin() {
-        return "adminDash";
+    @RequestMapping("fruits")
+    public String fruits() {
+        return "fruits";
+    }
+
+    @RequestMapping("fgs")
+    public String fgs() {
+        return "fgs";
     }
 
 }
