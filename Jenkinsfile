@@ -61,7 +61,7 @@ archiveArtifacts 'target/*.jar'
 
                             version: 'pom.0.0.1-SNAPSHOT',
 
-                            repository: 'Freshworld',
+                            repository: 'repository/Freshworld',
 
                             credentialsId: 'NEXUS_FWD',
 
