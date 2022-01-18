@@ -9,7 +9,7 @@ maven "M3"
 stages {
 stage('Build Maven') {
             steps{
-                 git branch: 'main', credentialsId: 'devopshint', url: 'https://github.com/devopshint/jenkins-nexus'
+                 git branch: 'master', credentialsId: 'DhamoK', url: 'https://github.com/DhamoK/FWD'
                  sh "mvn -Dmaven.test.failure.ignore=true clean package"
                 
             }
