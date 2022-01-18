@@ -46,7 +46,7 @@ stage('Build Maven') {
 
                             version: 'pom.0.0.1-SNAPSHOT',
 
-                            repository: 'repository/Freshworld',
+                            repository: 'Freshworld',
 
                             credentialsId: 'NEXUS_FWD',
 
