@@ -40,7 +40,7 @@ stage('Build Maven') {
                             
                             protocol: 'http',
 
-                            nexusUrl: 'http://localhost:8081',
+                            nexusUrl: 'localhost:8081',
 
                             groupId: 'pom.com.example',
 
