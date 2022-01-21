@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>FRESHWORLD - FGS</title>
+    <meta name="description" content="This is the description">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../static/css/home.css" th:href="@{css/home.css}"  rel="stylesheet"/>
+    <script type="text/javascript" th:src="@{js/script.js}"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+</head>
+<body>
+<header class="main-header2">
+
+    <nav class="main-nav nav">
+        <div class="logo" ><i class="fas fa-shopping-basket"></i><a th:href="@{shop}" style="color:black"><b>FreshWorld</b></a></div>
+
+    </nav>
+    <h1 class="band-name band-name-large" style="color:black">Spices</h1>
+
+
+</header>
+<br>
+
+<button type="button" class="collapsible"><i class="fas fa-cart-arrow-down" style= "color:black"></i>&nbsp;&nbsp;My Cart</button>
+<div class="content">
+    <section class="container content-section">
+
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+
+        <div class="checkout">
+            <a th:href="@{payment}" style="text-decoration:none; color: white">Checkout</a>
+        </div>
+        <!-- <button class="checkout" type="button"><a th:href="@{payment}">Checkout</a></button>-->
+
+
+    </section>
+</div>
+
+<section class="container content-section">
+
+    <div class="shop-items">
+
+        <div class="shop-item">
+
+            <span class="shop-item-title">CINNAMON</span>
+
+            <div class="shop-item-details">
+
+                <img src="../static/images/cinamon.jpeg" class="shop-item-image" alt="" th:src="@{images/cinamon.jpeg}"/>
+
+                <span class="discount-tag">20% off</span>
+
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+
+            </div>
+
+            <span class="shop-item-price">$12.99</span>
+
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">CUMIN</span>
+            <div class="shop-item-details">
+                <img src="../static/images/cuminseed.jpeg" class="shop-item-image" alt="" th:src="@{images/cuminseed.jpeg}"/>
+
+                <span class="discount-tag">10% off</span>
+
+                <button class="btn btn-primary shop-item-button" type="button" >ADD TO CART</button>
+            </div>
+            <span class="shop-item-price">$14.99</span>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">CLOVE</span>
+            <div class="shop-item-details">
+                <img src="../static/images/clove.jpeg" class="shop-item-image" alt="" th:src="@{images/clove.jpeg}"/>
+
+
+                <span class="discount-tag">15% off</span>
+                <button class="btn btn-primary shop-item-button" type="button" >ADD TO CART</button>
+            </div>
+            <span class="shop-item-price">$29.99</span>
+        </div>
+
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">CARDAMOM</span>
+                <div class="shop-item-details">
+                    <img src="../static/images/cardamom.jpeg" class="shop-item-image" alt="" th:src="@{images/cardamom.jpeg}"/>
+
+                    <span class="discount-tag">8% off</span>
+
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+                <span class="shop-item-price">$19.99</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>

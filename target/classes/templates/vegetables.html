@@ -1,113 +1,134 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatable" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>FRESHWORLD - VEGETABLES </title>
+    <meta name="description" content="This is the description">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../static/css/home.css" th:href="@{css/home.css}"  rel="stylesheet"/>
+    <script type="text/javascript" th:src="@{js/script.js}"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-<!--    <link> rel="stylesheet" th:href="@{webjars/font-awesome/5.15.2/css/all.css}" type="text/css"</link>-->
-<!--    <link href=""  th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css}" rel="stylesheet"/>-->
-    <title>Grocerry</title>
-    <link href="../static/css/home.css" th:href="@{css/home.css}" rel="stylesheet"/>
-<!--    <script type="text/javascript" th:src="@{/js/main.js}"></script>-->
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
 </head>
-    <body>
-    <script src="../static/js/main.js" type="text/javascript" th:src="@{js/main.js}"></script>
-<!--    <h1><i class=" fa fa-shopping-cart"></i></h1>-->
+<body>
+<header class="main-header">
 
-              <i class='bx bx-cart-alt cart'></i>
+    <nav class="main-nav nav">
+        <div class="logo" ><i class="fas fa-shopping-basket"></i><a th:href="@{shop}" style="color:black">FreshWorld</a></div>
 
-       <!-- products container-->
-           <section class="product">
-               <div class="product-container">
-                   <div class="product-card">
-                       <div class="product-image">
-<!--                           <span class="discount-tag">20% off</span>-->
+    </nav>
+    <h1 class="band-name band-name-large" style="color:black">Vegetables</h1>
 
-                           <img src="../static/images/tomato.jpeg" class="product-thumb" alt="" th:src="@{images/tomato.jpeg}"/>
-                           <span></span>
-                           <button class="card-btn">add to cart</button>
-                       </div>
-                       <div class="product-info">
-                           <h2 class="product-brand">tomato</h2>
 
-                           <span class="price">Rs 62</span><span class="actual-price">Rs 77.5</span>
-                       </div>
-                   </div>
-                   <div class="product-card">
-                       <div class="product-image">
-                           <span class="discount-tag">36% off</span>
-                           <img src="../static/images/onions1.jpg" class="product-thumb" alt="" th:src="@{images/onions1.jpg}"/>
-                           <button class="card-btn">add to cart</button>
-                       </div>
-                       <div class="product-info">
-                           <h2 class="product-brand">onion</h2>
+</header>
+<br>
 
-<!--                           <span class="price">Rs 41</span><span class="actual-price">Rs 65</span>-->
-                       </div>
-                   </div>
-                   <div class="product-card">
-                       <div class="product-image">
-                           <span class="discount-tag">31% off</span>
-                           <img src="../static/images/chillies1.jpg" class="product-thumb" alt="" th:src="@{images/chillies1.jpg}"/>
-                           <button class="card-btn">add to cart</button>
-                       </div>
-                       <div class="product-info">
-                           <h2 class="product-brand">chilli</h2>
+<button type="button" class="collapsible"><i class="fas fa-cart-arrow-down" style= "color:black"></i>&nbsp;&nbsp;My Cart</button>
+<div class="content">
+    <section class="container content-section">
 
-                           <span class="price">Rs 21</span><span class="actual-price">Rs 31</span>
-                       </div>
-                   </div>
-                   <div class="product-card">
-                       <div class="product-image">
-<!--                           <span class="discount-tag">28% off</span>-->
-                           <img src="../static/images/potatoes1.jpg" class="product-thumb" alt="" th:src="@{images/potatoes1.jpg}"/>
-                           <span></span>
-                           <button class="card-btn">add to cart</button>
-                       </div>
-                       <div class="product-info">
-                           <h2 class="product-brand">potato</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
 
-<!--                           <span class="price">Rs 34</span><span class="actual-price">Rs 47</span>-->
-                       </div>
-                   </div>
-               </div>
-           </section>
-           <section class="product">
-                          <div class="product-container">
-                           <div class="product-card">
-                                                 <div class="product-image">
-                                                     <span class="discount-tag">22% off</span>
-                                                     <img src="../static/images/carrot.jpeg" class="product-thumb" alt="" th:src="@{images/carrot.jpeg}"/>
-                                                     <button class="card-btn">add to cart</button>
-                                                 </div>
-                                                 <div class="product-info">
-                                                     <h2 class="product-brand">carrot</h2>
+        <div class="checkout">
+            <a th:href="@{payment}" style="text-decoration:none; color: white">Checkout</a>
+        </div>
+        <!-- <button class="checkout" type="button"><a th:href="@{payment}">Checkout</a></button>-->
 
-                                                     <span class="price">Rs 53</span><span class="actual-price">Rs 62</span>
-                                                 </div>
-                                             </div>
-                                         <div class="product-card">
-                                                          <div class="product-image">
-                                                              <span class="discount-tag">28% off</span>
 
-                                                              <img src="../static/images/garlic.jpeg" class="product-thumb" alt="" th:src="@{images/garlic.jpeg}"/>
-                                                                    <button class="card-btn">add to cart</button>
-                                                                           </div>
+    </section>
+</div>
 
-                                                                         <div class="product-info">
-                                                                                  <h2 class="product-brand">garlic</h2>
+<section class="container content-section">
 
-                                                                            <span class="price">Rs 50</span><span class="actual-price">Rs 65</span>
-                                                                                          </div>
-                                                                                      </div>
+    <div class="shop-items">
 
-                                         </div>
-                                     </section>
-    <div class="select">
+        <div class="shop-item">
 
+            <span class="shop-item-title">ONION</span>
+
+            <div class="shop-item-details">
+
+                <img src="../static/images/onions1.jpg" class="shop-item-image" alt="" th:src="@{images/onions1.jpg}"/>
+
+                <span class="discount-tag">20% off</span>
+
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+
+            </div>
+
+            <span class="shop-item-price">$12.99</span>
+
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">CHILLI</span>
+            <div class="shop-item-details">
+                <img src="../static/images/chillies1.jpg" class="shop-item-image" alt="" th:src="@{images/chillies1.jpg}"/>
+
+                <span class="discount-tag">10% off</span>
+
+                <button class="btn btn-primary shop-item-button" type="button" >ADD TO CART</button>
+            </div>
+            <span class="shop-item-price">$14.99</span>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">POTATO</span>
+            <div class="shop-item-details">
+                <img src="../static/images/potatoes1.jpg" class="shop-item-image" alt="" th:src="@{images/potatoes1.jpg}"/>
+
+
+                <span class="discount-tag">15% off</span>
+                <button class="btn btn-primary shop-item-button" type="button" >ADD TO CART</button>
+            </div>
+            <span class="shop-item-price">$29.99</span>
+        </div>
+
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">TOMATO</span>
+                <div class="shop-item-details">
+                    <img src="../static/images/tomato.jpeg" class="shop-item-image" alt="" th:src="@{images/tomato.jpeg}"/>
+
+                    <span class="discount-tag">8% off</span>
+
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+                <span class="shop-item-price">$19.99</span>
+            </div>
+
+        </div>
     </div>
-       </body>
-       </html>
+</section>
 
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>

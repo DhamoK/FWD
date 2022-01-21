@@ -7,12 +7,12 @@
     <title>shop</title>
 
 
-    <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <!-- custom css file link  -->
     <link href="../static/css/style2.css" th:href="@{css/style2.css}" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    </style>
 
 </head>
 <body>
@@ -32,7 +32,8 @@
         <div id="menu-btn" class="fas fa-bars"></div>
         <div id="search-btn" class="fas fa-search"></div>
         <div id="cart-btn" class="fas fa-shopping-cart"></div>
-        <div id="login-btn" class="fas fa-user"></div>
+        <a th:href="@{login}"><div id="login-btn" class="fas fa-user"></div></a>
+        <a th:href="@{start}"><div id="logout-btn" class="fa fa-sign-out"></div></a>
     </div>
 
     <form action="" class="search-form">
@@ -43,11 +44,11 @@
 
 </header>
 
-<!-- header section ends -->
 
 <div class="heading">
     <h1>our shop</h1>
     <p> <a th:href="@{home}">home >></a> shop </p>
+
 </div>
 
 <section class="category">
@@ -58,32 +59,31 @@
 
         <a th:href="@{fruits}" class="box">
             <img src="../static/images/cat-1.png" alt="" th:src="@{images/cat-1.png}"/>
-            <h3>fresh fruits</h3>
+            <h2>fresh fruits</h2>
         </a>
 
 
         <a th:href="@{vegetables}" class="box">
             <img src="../static/images/cat-2.png" alt="" th:src="@{images/cat-2.png}"/>
-            <h3>vegetables</h3>
+            <h2>vegetables</h2>
         </a>
 
         <a th:href="@{fgs}" class="box">
             <img src="../static/images/cat-3.png" alt="" th:src="@{images/cat-3.png}"/>
-            <h3>organic spices</h3>
-            </a>
+            <h2>organic spices</h2>
+        </a>
 
 
 
     </div>
 
 </section>
-      </div>
+</div>
 
-    </div>
+</div>
 
 </section>
 
-<!-- footer section starts  -->
 
 <section class="footer">
 
@@ -165,7 +165,6 @@
 </script>
 
 
-<!-- custom css file link  -->
 <script src="script.js"></script>
 </body>
 </html>

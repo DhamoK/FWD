@@ -5,8 +5,10 @@ import javax.persistence.*;
 import javax.persistence.*;
 
 @Entity
+
 @Table(name="product")
 public class Products {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int product_id;
@@ -20,25 +22,6 @@ public class Products {
 
     @Column(nullable = false, length = 50, name = "price")
     private double price;
-
-/*public Properties() {
-        super();
-    }*/
-
-    /*public Properties(String propName, String address, String details, double price) {
-        this.propName = propName;
-        this.address = address;
-        this.details = details;
-        this.price = price;
-    }*/
-
-    /*public Properties(int property_id, String propName, String address, String details, double price) {
-        this.property_id = property_id;
-        this.propName = propName;
-        this.address = address;
-        this.details = details;
-        this.price = price;
-    }*/
 
     public int getProduct_id() {
         return product_id;
@@ -71,11 +54,5 @@ public class Products {
     public void setPrice(double price) {
         this.price = price;
     }
-/* public Boolean getEnabled() {
-        return enabled;
-    }
 
-    public void setEnabled(Boolean enabled) {
-        this.enabled = enabled;
-    }*/
 }

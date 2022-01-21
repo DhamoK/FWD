@@ -6,16 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact</title>
 
-    <!-- font awesome cdn link  -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <!-- custom css file link  -->
+
     <link href="../static/css/style2.css" th:href="@{css/style2.css}" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
-    
-<!-- header section starts  -->
 
 <header class="header">
 
@@ -31,7 +30,8 @@
         <div id="menu-btn" class="fas fa-bars"></div>
         <div id="search-btn" class="fas fa-search"></div>
         <div id="cart-btn" class="fas fa-shopping-cart"></div>
-        <div id="login-btn" class="fas fa-user"></div>
+        <a th:href="@{login}"><div id="login-btn" class="fas fa-user"></div></a>
+        <a th:href="@{start}"><div id="logout-btn" class="fa fa-sign-out"></div></a>
     </div>
 
     <form action="" class="search-form">
@@ -42,8 +42,6 @@
 
 
 </header>
-
-<!-- header section ends -->
 
 <div class="heading">
     <h1>contact us</h1>
@@ -64,14 +62,13 @@
         <div class="icons">
             <i class="fas fa-envelope"></i>
             <h3>our email</h3>
-            <p>shaikhanas#gmail.com</p>
-            <p>anasbhai@gmail.com</p>
+            <p>freshworld@gmail.com</p>
         </div>
 
         <div class="icons">
             <i class="fas fa-map-marker-alt"></i>
             <h3>our address</h3>
-            <p>mumbai, india - 400104</p>
+            <p>Banglore, india - 560001</p>
         </div>
 
     </div>
@@ -92,35 +89,12 @@
             <input type="submit" value="send message" class="btn">
         </form>
 
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30153.788252261566!2d72.82321484621745!3d19.141690214227783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1633968347413!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31111.037901263033!2d77.49812432168281!3d12.9154502472706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3effb00b92cf%3A0x2dd67e6aca079ce6!2sRR%20Nagar%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1642416086362!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
     </div>
 
 </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- footer section starts  -->
 
 <section class="footer">
 
@@ -165,23 +139,8 @@
 
 </section>
 
-<section class="credit">created by mr. web designer | all rights reserved!</section>
-
-<!-- footer section ends -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-<!-- custom css file link  -->
 <script src="js/script.js"></script>
 
 </body>

@@ -14,19 +14,22 @@
 <body>
 <div class="container-fluid text-center">
     <div><h2>Manage Products</h2></div>
+    <br>
     <div>
-        <a class="h3" th:href="@{/new}">Add New Product</a>
+        <a class="btn btn-primary" th:href="@{/new}">Add New Product</a>
+        <button type="button" class="btn btn-info" style="position:relative; left:350px; bottom:20px; color:white"><a th:href="@{adminDash}" style="color:white; text-decoration:none">Dashboard</a></button>
     </div>
+    <br>
     <div th:if="${message}" class="alert alert-success text-center">
         [[${message}]]
     </div>
     <div>
-        <table class="table table-bordered">
+        <table class="table table-bordered table-striped">
             <thead class="thead-dark">
             <tr>
-                <th>Product_ID</th>
-                <th>Product_Name</th>
-                <th>Product_Category</th>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Product Category</th>
                 <th>Price</th>
                 <th>Action</th>
             </tr>

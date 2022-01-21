@@ -1,206 +1,133 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatable" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grocerry</title>
-
-    <link href="../static/css/home1.css" th:href="@{css/home1.css}"  rel="stylesheet">
-
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- font awesome -->
+    <title>FRESHWORLD - VEGETABLES </title>
+    <meta name="description" content="This is the description">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../static/css/home.css" th:href="@{css/home.css}"  rel="stylesheet"/>
+    <script type="text/javascript" th:src="@{js/script.js}"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 
 </head>
 <body>
+<header class="main-header">
 
-<header class="header">
+    <nav class="main-nav nav">
+        <div class="logo" ><i class="fas fa-shopping-basket"></i><a th:href="@{shop}" style="color:black">FreshWorld</a></div>
 
-    <div class="logo"> <i class="fas fa-shopping-basket"></i> FreshWorld</div>
-
-    <nav class="navbar">
-        <a th:href="@{home}">home</a>
-        <a th:href="@{shop}">shop</a>
-
-        <a th:href="@{contact}">contact</a>
     </nav>
-
-    <!--<div class="icons">
-        <div id="menu-btn" class="fas fa-bars"></div>
-        <div id="search-btn" class="fas fa-search"></div>
-
-        <div id="login-btn" class="fas fa-user"></div>
-    </div>-->
-    <a class="nav-link text-whit btn" id="cart" type="button" data-toggle="modal"
-       data-target="#exampleModalScrollable" onclick="cart()"><i class="fas fa-cart-arrow-down"></i>
-        My Cart</a>
-    <form action="" class="search-form">
-        <input type="search" placeholder="search here..." id="search-box">
-        <label for="search-box" class="fas fa-search"></label>
-    </form>
+    <h1 class="band-name band-name-large" style="color:black">Vegetables</h1>
 
 
 </header>
+<br>
+
+<button type="button" class="collapsible"><i class="fas fa-cart-arrow-down" style= "color:black"></i>&nbsp;&nbsp;My Cart</button>
+<div class="content">
+    <section class="container content-section">
+
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+
+        <div class="checkout">
+            <a th:href="@{payment}" style="text-decoration:none; color: white">Checkout</a>
+        </div>
+        <!-- <button class="checkout" type="button"><a th:href="@{payment}">Checkout</a></button>-->
 
 
+    </section>
+</div>
 
-<!-- products container-->
-<section class="product">
-    <h2 class="product-category">Essential items</h2>
-    <div class="product-container">
-        <div class="product-card">
-            <div class="product-image" >
+<section class="container content-section">
+
+    <div class="shop-items">
+
+        <div class="shop-item">
+
+            <span class="shop-item-title">ONION</span>
+
+            <div class="shop-item-details">
+
+                <img src="../static/images/onions1.jpg" class="shop-item-image" alt="" th:src="@{images/onions1.jpg}"/>
+
                 <span class="discount-tag">20% off</span>
-                <img src="../static/images/tomato.jpeg" class="product-thumb" alt="" th:src="@{images/tomato.jpeg}"/>
-                <button class="card-btn" onclick="addToCart(1)">add to cart</button>
+
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+
             </div>
-            <div class="product-info">
-                <h2 class="product-brand">tomato</h2>
-                <p class="product-short-des">Tomato-local, Grade-A</p>
-                <span class="price">Rs 62</span><span class="actual-price">Rs 77.5</span>
-            </div>
+
+            <span class="shop-item-price">$12.99</span>
+
         </div>
-        <div class="product-card">
-            <div class="product-image">
-                <span class="discount-tag">36% off</span>
-                <img src="../static/images/onions1.jpg" class="product-thumb" alt="" th:src="@{images/onions1.jpg}"/>
-                <button class="card-btn" onclick="addToCart(2)">add to cart</button>
+        <div class="shop-item">
+            <span class="shop-item-title">CHILLI</span>
+            <div class="shop-item-details">
+                <img src="../static/images/chillies1.jpg" class="shop-item-image" alt="" th:src="@{images/chillies1.jpg}"/>
+
+                <span class="discount-tag">10% off</span>
+
+                <button class="btn btn-primary shop-item-button" type="button" >ADD TO CART</button>
             </div>
-            <div class="product-info">
-                <h2 class="product-brand">onion</h2>
-                <p class="product-short-des">onion-medium</p>
-                <span class="price">Rs 41</span><span class="actual-price">Rs 65</span>
-            </div>
+            <span class="shop-item-price">$14.99</span>
         </div>
-        <div class="product-card">
-            <div class="product-image">
-                <span class="discount-tag">31% off</span>
-                <img src="../static/images/chillies1.jpg" class="product-thumb" alt="" th:src="@{images/chillies1.jpg}"/>
-                <button class="card-btn" onclick="addToCart(3)">add to cart</button>
+        <div class="shop-item">
+            <span class="shop-item-title">POTATO</span>
+            <div class="shop-item-details">
+                <img src="../static/images/potatoes1.jpg" class="shop-item-image" alt="" th:src="@{images/potatoes1.jpg}"/>
+
+
+                <span class="discount-tag">15% off</span>
+                <button class="btn btn-primary shop-item-button" type="button" >ADD TO CART</button>
             </div>
-            <div class="product-info">
-                <h2 class="product-brand">chilli</h2>
-                <p class="product-short-des">Fresh chilli-green long, medium</p>
-                <span class="price">Rs 21</span><span class="actual-price">Rs 31</span>
-            </div>
+            <span class="shop-item-price">$29.99</span>
         </div>
-        <div class="product-card">
-            <div class="product-image">
-                <span class="discount-tag">28% off</span>
-                <img src="../static/images/potatoes1.jpg" class="product-thumb" alt="" th:src="@{images/potatoes1.jpg}"/>
-                <button class="card-btn" onclick="addToCart(4)">add to cart</button>
+
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">TOMATO</span>
+                <div class="shop-item-details">
+                    <img src="../static/images/tomato.jpeg" class="shop-item-image" alt="" th:src="@{images/tomato.jpeg}"/>
+
+                    <span class="discount-tag">8% off</span>
+
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+                <span class="shop-item-price">$19.99</span>
             </div>
-            <div class="product-info">
-                <h2 class="product-brand">potato</h2>
-                <p class="product-short-des">Fresh potato</p>
-                <span class="price">Rs 34</span><span class="actual-price">Rs 47</span>
-            </div>
+
         </div>
     </div>
 </section>
 
-<!-- modal starts here -->
-<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog"
-     aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle"><i class="fas fa-cart-arrow-down"></i>My Cart</h5>
-                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                     <span aria-hidden="true">&times;</span>
-                 </button>-->
-            </div>
-            <div class="modal-body">
-                <!-- listing items starts -->
-                <div>
-                    <td>
-                        <ul class="list">
 
-                        </ul>
-                    </td>
-                    <div>
-                        <h3 class="bill px-5">Select Something</h3>
-                    </div>
-                    <div class="checkout">
-                        <a href="checkout.html" class="btn checkout m-3">Checkout</a>
-                    </div>
-                </div>
-                <!-- listing items ends -->
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- modal ends here -->
-<!-- <button id="cart"  type="button" class="btn m-5" data-toggle="modal" data-target="#exampleModalScrollable" onclick="cart()">My Cart</button>
--->
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-</script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-</script>
-<!--<script th:src="script.js"></script>-->
-<script  type="text/javascript">
-    const list = document.querySelector('.list');
-const products = {
-    1: {
-        "name": 'tomato',
-        "price": '62'
-    },
-    2: {
-        "name": 'onion',
-        "price": '41'
-    },
-    3: {
-        "name": 'chilli',
-        "price": '21'
-    },
-    4: {
-        "name": 'potato',
-        "price": '34'
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
     }
-
-}
-let item = [];
-let bill = [];
-
-function addToCart(x) {
-    const span = `<span class="price">${products[x].price}    Rs</span>`
-    const result = products[x].name + "\t" + span;
-    if (item.includes(products[x]) === false) item.push(result);
-    bill.push(products[x].price);
-    alert("added to cart");
-
-}
-
-function cart() {
-    list.innerHTML = "";
-    for (let i = 0; i < item.length; i++) {
-        let text = item[i];
-        let listItem = document.createElement("LI");
-        listItem.innerHTML = text;
-        list.appendChild(listItem);
-        listItem.style.textAlign = 'left';
-    }
-    const btn = document.querySelector('.bill');
-    const total = bill.reduce(add);
-
-    function add(accumulator, a) {
-        return parseInt(accumulator) + parseInt(a);
-    }
-    console.log(total);
-    btn.innerHTML = `Total Bill is ${total} Rs`;
+  });
 }
 </script>
+
 </body>
 </html>

@@ -1,5 +1,5 @@
-com\torryharris\Freshworldgrocery\model\Products.class
 com\torryharris\Freshworldgrocery\model\ProductService.class
 com\torryharris\Freshworldgrocery\model\ProductRepository.class
 com\torryharris\Freshworldgrocery\model\ProductController.class
+com\torryharris\Freshworldgrocery\model\Products.class
 com\torryharris\Freshworldgrocery\FreshworldGroceryApplication.class

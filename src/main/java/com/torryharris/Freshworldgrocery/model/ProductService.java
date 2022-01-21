@@ -34,10 +34,7 @@ public class ProductService {
     }
 
     public void delete(Integer id) throws UserPrincipalNotFoundException {
-        // Long count=repo.countById(id);
-        //if(count==null || count==0){
-        //    throw new UserPrincipalNotFoundException("Could not find Property with ID "+ id);
-        //}
+
         repo.deleteById(id);
     }
 }

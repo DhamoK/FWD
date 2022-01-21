@@ -63,7 +63,7 @@ public class ProductController {
     @PostMapping("/save")
     public String saveProduct(Products products, RedirectAttributes ra){
         service.save(products);
-        ra.addFlashAttribute("message","The user has been saved successfully");
+        ra.addFlashAttribute("message","The product has been saved successfully");
         return "redirect:/products";
     }
 
@@ -115,6 +115,16 @@ public class ProductController {
     @RequestMapping("fgs")
     public String fgs() {
         return "fgs";
+    }
+
+    @RequestMapping("payment")
+    public String payment() {
+        return "payment";
+    }
+
+    @RequestMapping("thank")
+    public String thank() {
+        return "thank";
     }
 
 }

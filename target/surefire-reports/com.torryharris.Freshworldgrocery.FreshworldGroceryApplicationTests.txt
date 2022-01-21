@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.torryharris.Freshworldgrocery.FreshworldGroceryApplicationTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.329 s - in com.torryharris.Freshworldgrocery.FreshworldGroceryApplicationTests
