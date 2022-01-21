@@ -48,7 +48,7 @@ groupId: 'pom.com.example',
 
 version: 'pom.0.0.1-SNAPSHOT',
 
-repository: 'Freshworld',
+repository: 'fwd',
 
 credentialsId: 'NEXUS_FWD',
 
