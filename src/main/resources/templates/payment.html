@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../static/css/style4.css" th:href="@{css/style4.css}" rel="stylesheet"/>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+<body>
+
+
+<div class="container">
+
+
+    <form th:action="@{thank}">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title"><a th:href="@{vegetables}"><i style='font-size:24px' class='fas'>&#xf0a8;</i></a>&nbsp;&nbsp;billing address</h3>
+
+                <div class="inputBox">
+                    <span>full name :</span>
+                    <input type="text" placeholder="john deo">
+                </div>
+                <div class="inputBox">
+                    <span>address :</span>
+                    <input type="text" placeholder="room - street - locality">
+                </div>
+                <div class="inputBox">
+                    <span>city :</span>
+                    <input type="text" placeholder="Bengaluru">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>state :</span>
+                        <input type="text" placeholder="karnataka">
+                    </div>
+                    <div class="inputBox">
+                        <span>pincode :</span>
+                        <input type="text" placeholder="11122">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">payment</h3>
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="../static/images/card_img.png" alt="" th:src="@{images/card_img.png}"/>
+                </div>
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" placeholder="mr. john deo">
+                </div>
+                <div class="inputBox">
+                    <span>credit card number :</span>
+                    <input type="number" placeholder="1111-2222-3333-4444">
+                </div>
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>valid thru(MM/YY)</span>
+                        <input type="text" placeholder="01/25">
+                    </div>
+
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" placeholder="123">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div>
+
+            <input type="submit" value="proceed to checkout" class="submit-btn" style="position:relative; right:-320px">
+
+        </div>
+
+    </form>
+
+</div>
+
+
+</body>
+</html>
