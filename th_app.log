@@ -1,152 +1,31 @@
-2022-01-21 11:57:30.272  INFO 16724 --- [restartedMain] c.t.F.FreshworldGroceryApplication       : Starting FreshworldGroceryApplication using Java 1.8.0_312 on THBSSTRLPT-188 with PID 16724 (C:\Users\dhamotharan_pandi\IdeaProjects\Final_FWD\FWD\target\classes started by dhamotharan_pandi in C:\Users\dhamotharan_pandi\IdeaProjects\Final_FWD\FWD)
-2022-01-21 11:57:30.283  INFO 16724 --- [restartedMain] c.t.F.FreshworldGroceryApplication       : No active profile set, falling back to default profiles: default
-2022-01-21 11:57:30.389  INFO 16724 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-01-21 11:57:30.389  INFO 16724 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-01-21 11:57:31.428  INFO 16724 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-01-21 11:57:31.520  INFO 16724 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 1 JPA repository interfaces.
-2022-01-21 11:57:33.094  INFO 16724 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
-2022-01-21 11:57:33.107  INFO 16724 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-01-21 11:57:33.108  INFO 16724 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
-2022-01-21 11:57:33.237  INFO 16724 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-01-21 11:57:33.238  INFO 16724 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2847 ms
-2022-01-21 11:57:33.545  INFO 16724 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-01-21 11:57:33.661  INFO 16724 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
-2022-01-21 11:57:33.993  INFO 16724 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-01-21 11:57:34.158  INFO 16724 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-01-21 11:57:34.162  WARN 16724 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2022-01-21 11:57:34.681  INFO 16724 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-01-21 11:57:34.704  INFO 16724 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2022-01-21 11:57:35.832  INFO 16724 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-01-21 11:57:35.842  INFO 16724 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-01-21 11:57:36.418  WARN 16724 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-01-21 11:57:37.225  INFO 16724 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-01-21 11:57:37.293  INFO 16724 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
-2022-01-21 11:57:37.483  INFO 16724 --- [restartedMain] c.t.F.FreshworldGroceryApplication       : Started FreshworldGroceryApplication in 7.901 seconds (JVM running for 8.744)
-2022-01-21 11:57:37.485  INFO 16724 --- [restartedMain] c.t.F.FreshworldGroceryApplication       : End
-2022-01-21 11:57:48.957  INFO 16724 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-01-21 11:57:48.958  INFO 16724 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-01-21 11:57:48.960  INFO 16724 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2022-01-21 12:22:42.666  INFO 16724 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-01-21 12:22:42.677  INFO 16724 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-01-21 12:22:42.697  INFO 16724 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-01-21 12:22:47.190  INFO 6052 --- [restartedMain] c.t.F.FreshworldGroceryApplication       : Starting FreshworldGroceryApplication using Java 1.8.0_312 on THBSSTRLPT-188 with PID 6052 (C:\Users\dhamotharan_pandi\IdeaProjects\Final_FWD\FWD\target\classes started by dhamotharan_pandi in C:\Users\dhamotharan_pandi\IdeaProjects\Final_FWD\FWD)
-2022-01-21 12:22:47.191  INFO 6052 --- [restartedMain] c.t.F.FreshworldGroceryApplication       : No active profile set, falling back to default profiles: default
-2022-01-21 12:22:47.275  INFO 6052 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-01-21 12:22:47.275  INFO 6052 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-01-21 12:22:48.250  INFO 6052 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-01-21 12:22:48.335  INFO 6052 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 1 JPA repository interfaces.
-2022-01-21 12:22:49.808  INFO 6052 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
-2022-01-21 12:22:49.856  INFO 6052 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-01-21 12:22:49.857  INFO 6052 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
-2022-01-21 12:22:50.014  INFO 6052 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-01-21 12:22:50.015  INFO 6052 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2739 ms
-2022-01-21 12:22:50.346  INFO 6052 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-01-21 12:22:50.485  INFO 6052 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
-2022-01-21 12:22:50.773  INFO 6052 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-01-21 12:22:50.934  INFO 6052 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-01-21 12:22:50.939  WARN 6052 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2022-01-21 12:22:51.376  INFO 6052 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-01-21 12:22:51.402  INFO 6052 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2022-01-21 12:22:52.319  INFO 6052 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-01-21 12:22:52.331  INFO 6052 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-01-21 12:22:52.836  WARN 6052 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-01-21 12:22:53.415  INFO 6052 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-01-21 12:22:53.605  INFO 6052 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
-2022-01-21 12:22:53.617  INFO 6052 --- [restartedMain] c.t.F.FreshworldGroceryApplication       : Started FreshworldGroceryApplication in 7.072 seconds (JVM running for 7.857)
-2022-01-21 12:22:53.622  INFO 6052 --- [restartedMain] c.t.F.FreshworldGroceryApplication       : End
-2022-01-21 12:23:02.955  INFO 6052 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-01-21 12:23:02.955  INFO 6052 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-01-21 12:23:02.958  INFO 6052 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-01-21 12:24:42.195  INFO 6052 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-01-21 12:24:42.200  INFO 6052 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-01-21 12:24:42.213  INFO 6052 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-01-21 12:24:46.024  INFO 16480 --- [restartedMain] c.t.F.FreshworldGroceryApplication       : Starting FreshworldGroceryApplication using Java 1.8.0_312 on THBSSTRLPT-188 with PID 16480 (C:\Users\dhamotharan_pandi\IdeaProjects\Final_FWD\FWD\target\classes started by dhamotharan_pandi in C:\Users\dhamotharan_pandi\IdeaProjects\Final_FWD\FWD)
-2022-01-21 12:24:46.026  INFO 16480 --- [restartedMain] c.t.F.FreshworldGroceryApplication       : No active profile set, falling back to default profiles: default
-2022-01-21 12:24:46.103  INFO 16480 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-01-21 12:24:46.104  INFO 16480 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-01-21 12:24:47.043  INFO 16480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-01-21 12:24:47.115  INFO 16480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interfaces.
-2022-01-21 12:24:48.520  INFO 16480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
-2022-01-21 12:24:48.533  INFO 16480 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-01-21 12:24:48.534  INFO 16480 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
-2022-01-21 12:24:48.668  INFO 16480 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-01-21 12:24:48.668  INFO 16480 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2563 ms
-2022-01-21 12:24:48.948  INFO 16480 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-01-21 12:24:49.049  INFO 16480 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
-2022-01-21 12:24:49.286  INFO 16480 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-01-21 12:24:49.409  INFO 16480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-01-21 12:24:49.412  WARN 16480 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2022-01-21 12:24:49.797  INFO 16480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-01-21 12:24:49.818  INFO 16480 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2022-01-21 12:24:50.668  INFO 16480 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-01-21 12:24:50.684  INFO 16480 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-01-21 12:24:51.179  WARN 16480 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-01-21 12:24:51.736  INFO 16480 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-01-21 12:24:51.893  INFO 16480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
-2022-01-21 12:24:51.907  INFO 16480 --- [restartedMain] c.t.F.FreshworldGroceryApplication       : Started FreshworldGroceryApplication in 6.474 seconds (JVM running for 7.311)
-2022-01-21 12:24:51.911  INFO 16480 --- [restartedMain] c.t.F.FreshworldGroceryApplication       : End
-2022-01-21 12:24:55.415  INFO 16480 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-01-21 12:24:55.416  INFO 16480 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-01-21 12:24:55.417  INFO 16480 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-01-21 12:33:21.619  INFO 16480 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-01-21 12:33:21.627  INFO 16480 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-01-21 12:33:21.639  INFO 16480 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-01-21 12:33:25.745  INFO 16464 --- [restartedMain] c.t.F.FreshworldGroceryApplication       : Starting FreshworldGroceryApplication using Java 1.8.0_312 on THBSSTRLPT-188 with PID 16464 (C:\Users\dhamotharan_pandi\IdeaProjects\Final_FWD\FWD\target\classes started by dhamotharan_pandi in C:\Users\dhamotharan_pandi\IdeaProjects\Final_FWD\FWD)
-2022-01-21 12:33:25.747  INFO 16464 --- [restartedMain] c.t.F.FreshworldGroceryApplication       : No active profile set, falling back to default profiles: default
-2022-01-21 12:33:25.829  INFO 16464 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-01-21 12:33:25.829  INFO 16464 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-01-21 12:33:26.948  INFO 16464 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-01-21 12:33:27.042  INFO 16464 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 1 JPA repository interfaces.
-2022-01-21 12:33:28.517  INFO 16464 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
-2022-01-21 12:33:28.531  INFO 16464 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-01-21 12:33:28.532  INFO 16464 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
-2022-01-21 12:33:28.674  INFO 16464 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-01-21 12:33:28.674  INFO 16464 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2844 ms
-2022-01-21 12:33:28.991  INFO 16464 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-01-21 12:33:29.086  INFO 16464 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
-2022-01-21 12:33:29.367  INFO 16464 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-01-21 12:33:29.536  INFO 16464 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-01-21 12:33:29.540  WARN 16464 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2022-01-21 12:33:29.953  INFO 16464 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-01-21 12:33:29.979  INFO 16464 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2022-01-21 12:33:31.019  INFO 16464 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-01-21 12:33:31.030  INFO 16464 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-01-21 12:33:31.568  WARN 16464 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-01-21 12:33:32.149  INFO 16464 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-01-21 12:33:32.326  INFO 16464 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
-2022-01-21 12:33:32.336  INFO 16464 --- [restartedMain] c.t.F.FreshworldGroceryApplication       : Started FreshworldGroceryApplication in 7.227 seconds (JVM running for 8.085)
-2022-01-21 12:33:32.339  INFO 16464 --- [restartedMain] c.t.F.FreshworldGroceryApplication       : End
-2022-01-21 12:33:48.022  INFO 16464 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-01-21 12:33:48.022  INFO 16464 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-01-21 12:33:48.024  INFO 16464 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2022-01-21 12:39:57.612  INFO 16464 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-01-21 12:39:57.618  INFO 16464 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-01-21 12:39:57.631  INFO 16464 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-01-21 12:41:14.355  INFO 3400 --- [restartedMain] c.t.F.FreshworldGroceryApplication       : Starting FreshworldGroceryApplication using Java 1.8.0_312 on THBSSTRLPT-188 with PID 3400 (C:\Users\dhamotharan_pandi\IdeaProjects\Final_FWD\FWD\target\classes started by dhamotharan_pandi in C:\Users\dhamotharan_pandi\IdeaProjects\Final_FWD\FWD)
-2022-01-21 12:41:14.357  INFO 3400 --- [restartedMain] c.t.F.FreshworldGroceryApplication       : No active profile set, falling back to default profiles: default
-2022-01-21 12:41:14.435  INFO 3400 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-01-21 12:41:14.436  INFO 3400 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-01-21 12:41:15.471  INFO 3400 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-01-21 12:41:15.554  INFO 3400 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 1 JPA repository interfaces.
-2022-01-21 12:41:16.948  INFO 3400 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
-2022-01-21 12:41:16.960  INFO 3400 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-01-21 12:41:16.961  INFO 3400 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
-2022-01-21 12:41:17.102  INFO 3400 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-01-21 12:41:17.103  INFO 3400 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2666 ms
-2022-01-21 12:41:17.411  INFO 3400 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-01-21 12:41:17.477  INFO 3400 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
-2022-01-21 12:41:17.721  INFO 3400 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-01-21 12:41:17.846  INFO 3400 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-01-21 12:41:17.849  WARN 3400 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2022-01-21 12:41:18.199  INFO 3400 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-01-21 12:41:18.217  INFO 3400 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2022-01-21 12:41:19.012  INFO 3400 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-01-21 12:41:19.022  INFO 3400 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-01-21 12:41:19.511  WARN 3400 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-01-21 12:41:20.065  INFO 3400 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-01-21 12:41:20.267  INFO 3400 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
-2022-01-21 12:41:20.281  INFO 3400 --- [restartedMain] c.t.F.FreshworldGroceryApplication       : Started FreshworldGroceryApplication in 6.487 seconds (JVM running for 7.409)
-2022-01-21 12:41:20.284  INFO 3400 --- [restartedMain] c.t.F.FreshworldGroceryApplication       : End
-2022-01-21 12:41:27.719  INFO 3400 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-01-21 12:41:27.720  INFO 3400 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-01-21 12:41:27.721  INFO 3400 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-01-27 11:23:36.624  INFO 10360 --- [restartedMain] c.t.F.FreshworldGroceryApplication       : Starting FreshworldGroceryApplication using Java 1.8.0_312 on THBSSTRLPT-188 with PID 10360 (C:\Users\dhamotharan_pandi\IdeaProjects\Final_FWD\FWD\target\classes started by dhamotharan_pandi in C:\Users\dhamotharan_pandi\IdeaProjects\Final_FWD\FWD)
+2022-01-27 11:23:36.635  INFO 10360 --- [restartedMain] c.t.F.FreshworldGroceryApplication       : No active profile set, falling back to default profiles: default
+2022-01-27 11:23:36.791  INFO 10360 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-27 11:23:36.793  INFO 10360 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-27 11:23:38.370  INFO 10360 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-27 11:23:38.490  INFO 10360 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 101 ms. Found 1 JPA repository interfaces.
+2022-01-27 11:23:40.721  INFO 10360 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-01-27 11:23:40.757  INFO 10360 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-27 11:23:40.758  INFO 10360 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-01-27 11:23:40.932  INFO 10360 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-27 11:23:40.933  INFO 10360 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4140 ms
+2022-01-27 11:23:41.597  INFO 10360 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-27 11:23:41.749  INFO 10360 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-01-27 11:23:42.193  INFO 10360 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-27 11:23:42.478  INFO 10360 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-27 11:23:42.483  WARN 10360 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-01-27 11:23:43.346  INFO 10360 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-27 11:23:43.375  INFO 10360 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-01-27 11:23:44.721  INFO 10360 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-27 11:23:44.733  INFO 10360 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-27 11:23:45.681  WARN 10360 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-27 11:23:46.455  INFO 10360 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-01-27 11:23:46.528  INFO 10360 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2022-01-27 11:23:46.715  INFO 10360 --- [restartedMain] c.t.F.FreshworldGroceryApplication       : Started FreshworldGroceryApplication in 11.501 seconds (JVM running for 13.153)
+2022-01-27 11:23:46.725  INFO 10360 --- [restartedMain] c.t.F.FreshworldGroceryApplication       : End
+2022-01-27 11:23:57.400  INFO 10360 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-27 11:23:57.401  INFO 10360 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-27 11:23:57.403  INFO 10360 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-01-27 11:34:07.379  INFO 10360 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-27 11:34:07.387  INFO 10360 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-01-27 11:34:07.408  INFO 10360 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

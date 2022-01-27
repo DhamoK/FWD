@@ -21,7 +21,7 @@ public class ProductController {
 
     @RequestMapping("/start")
     public String start() {
-        return "start";
+        return "index";
     }
 
     @RequestMapping("/login")
