@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My awesome food store</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="../static/css/style3.css" th:href="@{css/style3.css}" rel="stylesheet" >
+</head>
+
+<body>
+<div class="main-wrapper">
+
+    <div class="site-content-wrapper">
+
+        <!--   <nav>-->
+        <div class="top">
+            <div class="container flex justify-between">
+                <div class="contact flex items-center">
+
+                    <div>
+                        <h5>Call US: (+91) 123 456 789</h5>
+                        <h6>E-mail : support@freshworld.com</h6>
+                    </div>
+                </div>
+                <div class="branding">
+                    <img src="../static/images/freshimg.png" alt="" th:src="@{images/freshimg.png}"/>
+                </div>
+                <div class="time flex items-center">
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <header class="hero flex items-center">
+            <div class="container">
+                <div class="welcome flex items-center">
+                    <h3>Welcome to <span>Fresh World</span></h3>
+
+                </div>
+                <h1>The World Best <span>Grocery</span> Website</h1>
+                <p>Stay Home</p>
+                <p>and</p>
+                <p>Shop Online !!</p>
+                <br>
+                <br>
+
+                <div class="button-container">
+                    <form th:action="@{login}" method="post">
+                        <div>
+                            <button class="btn btn-primary" type="submit">User</button>
+                        </div>
+                    </form>
+
+                    <form th:action="@{adminlogin}" method="post">
+                        <div>
+                            <button class="btn btn-secondary" type="submit">Admin</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="hero-image">
+                    <img src="../static/images/straw.png" alt="" th:src="@{images/straw.png}"/>
+                </div>
+            </div>
+
+        </header>
+    </div>
+</div>
+
+</body>
+
+</html>
